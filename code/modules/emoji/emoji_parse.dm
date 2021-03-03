@@ -24,7 +24,7 @@
 					pos = search + length(text[pos])
 				else if(ispath(isthisapath, /atom))	//path
 					var/atom/thisisanatom = isthisapath
-					parsed += "[icon2html(initial(thisisanatom.icon), world, initial(thisisanatom.icon_state))]"
+					parsed += "[icon2html(initial(thisisanatom.icon), world, initial(thisisanatom.icon_state), 32, 32)]"
 					pos = search + length(text[pos])
 				else
 					parsed += copytext(text, pos, search)
