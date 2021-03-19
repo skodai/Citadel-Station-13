@@ -323,7 +323,7 @@ SUBSYSTEM_DEF(ticker)
 			to_chat(world, "<h4>[holiday.greet()]</h4>")
 
 	PostSetup()
-	SSshuttle.realtimeofstart = world.realtime
+	SSshuttle.realtimeofstart = REALTIMEOFDAY
 
 	return TRUE
 
