@@ -91,7 +91,7 @@ SUBSYSTEM_DEF(shuttle)
 		WARNING("No /obj/docking_port/mobile/emergency/backup placed on the map!")
 	if(!supply)
 		WARNING("No /obj/docking_port/mobile/supply placed on the map!")
-		realtimeofstart = world.realtime
+	realtimeofstart = REALTIMEOFDAY
 	return ..()
 
 /datum/controller/subsystem/shuttle/proc/initial_load()
